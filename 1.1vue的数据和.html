@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1.1</title>
+</head>
+<body>
+    <script src="vue.js"></script>
+    <div id="app">
+        <h1> {{ time }}</h1>
+        <p> {{ month }}</p>
+        <span>{{ place }}</span>
+    </div>
+     <script>
+         new Vue({
+             el:'#app',
+             data:{
+                 time:'14:11',
+                 month:'星期日',
+                 place:'龙岗书城'
+             }
+         })
+     </script>
+</body>
+</html>
